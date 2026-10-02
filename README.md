@@ -1,6 +1,7 @@
 # FFmpeg Studio Pro 🎬
 
 > In-browser media converter and editor powered by Local FFmpeg WebAssembly.
+> Also view at https://ffmpeg-studio-bay.vercel.app.
 
 ## Features
 - **100% Client-Side / Zero Server:** Runs entirely in your browser via local WebAssembly. No server uploads.
