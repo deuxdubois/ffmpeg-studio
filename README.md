@@ -1,16 +1,17 @@
-# FFmpeg Studio 🎬
+# FFmpeg Studio Pro 🎬
 
-> In-browser media converter and editor powered by FFmpeg WebAssembly.
+> In-browser media converter and editor powered by Local FFmpeg WebAssembly.
 
 ## Features
-- **100% Client-Side / Zero Server:** Runs entirely in your browser via WASM. No server upload, zero backend maintenance.
-- **Drag & Drop:** Easy file dropping zone for videos and audio files.
-- **Basic FFmpeg Features:**
-  - **Format Conversion:** Convert MP4, WebM, AVI, MOV, GIF, MP3, WAV.
-  - **Resize / Scale:** Change video resolution (1080p, 720p, 480p, 360p).
-  - **Trim Video:** Cut video clips by start time and duration.
-  - **Extract Audio:** Extract MP3 tracks from video files.
-  - **Mute Audio:** Strip audio tracks from video.
+- **100% Client-Side / Zero Server:** Runs entirely in your browser via local WebAssembly. No server uploads, zero backend maintenance.
+- **Drag & Drop:** Easy file dropping zone for videos and audio files with strict file type safety allowlists (`.mp4`, `.webm`, `.mov`, `.avi`, `.mkv`, `.mp3`, `.wav`, `.ogg`, `.flac`).
+- **Comprehensive Media Editing Tools:**
+  - **Format Conversion:** Convert videos and audio between MP4, WebM, AVI, MOV, GIF, MP3, WAV, and OGG.
+  - **Resolution Chooser:** Resize videos to 1080p, 720p, 480p, or 360p.
+  - **Visual Trim Sliders:** Cut video and audio clips using interactive start and end time range sliders bound to actual media duration.
+  - **Playback Speed Control:** Adjust playback speed from 0.5x slow motion to 2.0x fast forward.
+  - **Rotate & Flip:** 90° clockwise, 180°, 90° counter-clockwise, and horizontal mirror flip.
+  - **Extract Audio:** Extract standalone MP3 tracks from video files.
 - **Real-Time Progress & Logs:** Live progress bar and console output.
 
 ## Getting Started
@@ -19,27 +20,18 @@
 # Install dependencies
 npm install
 
-# Run local development server (no COOP/COEP headers needed: uses the single-threaded core)
+# Run local development server
 npm run dev
 
 # Build for production
 npm run build
-```
 
-## Project layout / FFmpeg core files
+# Preview production build locally
+npm run preview
 ```
-public/ffmpeg-core.js     <- ESM build of @ffmpeg/core 0.12.10 (dist/esm)
-public/ffmpeg-core.wasm   <- matching wasm from the same release
-src/engine/ffmpegEngine.js
-```
-The `.js` and `.wasm` must be the **ESM** build and come from the same release.
-To refresh them: `cp node_modules/@ffmpeg/core/dist/esm/ffmpeg-core.* public/`
-(`@ffmpeg/core` is pinned in devDependencies at 0.12.10.)
 
 ## Support Open Source ❤️
-If FFmpeg Studio helps your workflow, consider supporting via:
-- [GitHub Sponsors](https://github.com/sponsors/username)
-- [Buy Me a Coffee](https://buymeacoffee.com/username)
+If FFmpeg Studio Pro helps your workflow, consider supporting development via [Buy Me a Coffee](https://buymeacoffee.com/deuxdubois).
 
 ## License
 MIT
