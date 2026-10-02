@@ -3,7 +3,7 @@
 > In-browser media converter and editor powered by Local FFmpeg WebAssembly.
 
 ## Features
-- **100% Client-Side / Zero Server:** Runs entirely in your browser via local WebAssembly. No server uploads, zero backend maintenance.
+- **100% Client-Side / Zero Server:** Runs entirely in your browser via local WebAssembly. No server uploads.
 - **Drag & Drop:** Easy file dropping zone for videos and audio files with strict file type safety allowlists (`.mp4`, `.webm`, `.mov`, `.avi`, `.mkv`, `.mp3`, `.wav`, `.ogg`, `.flac`).
 - **Comprehensive Media Editing Tools:**
   - **Format Conversion:** Convert videos and audio between MP4, WebM, AVI, MOV, GIF, MP3, WAV, and OGG.
