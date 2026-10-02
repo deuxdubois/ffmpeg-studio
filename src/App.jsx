@@ -195,7 +195,7 @@ export default function App() {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <a
-            href="https://github.com/username/ffmpeg-studio"
+            href="https://github.com/deuxdubois/ffmpeg-studio"
             target="_blank"
             rel="noreferrer"
             style={{ color: 'var(--text-muted)', fontSize: '0.875rem', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.3rem' }}
